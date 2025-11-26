@@ -1495,10 +1495,6 @@ const StatsCard = ({ icon, label, value, change, changeType, iconBg, iconColor }
           alignItems: 'center',
           gap: '4px',
         }}>
-          <span style={{ fontSize: '14px' }}>
-            {isPositive ? '↑' : isNegative ? '↓' : ''}
-          </span>
-          {change} o'tgan haftadan beri
         </div>
       </div>
     </div>
@@ -1517,7 +1513,7 @@ export default function Billing() {
       icon: '🏢',
       label: 'Organizations',
       value: '1,456',
-      change: '+6.5%',
+
       changeType: 'positive',
       iconBg: 'linear-gradient(135deg, #EEF2FF 0%, #E0E7FF 100%)',
       iconColor: '#6366F1',
@@ -1526,7 +1522,7 @@ export default function Billing() {
       icon: '📄',
       label: 'Shartnomalar',
       value: '3,345',
-      change: '-0.10%',
+
       changeType: 'negative',
       iconBg: 'linear-gradient(135deg, #FEF3C7 0%, #FDE68A 100%)',
       iconColor: '#F59E0B',
@@ -1535,7 +1531,7 @@ export default function Billing() {
       icon: '💳',
       label: "To'lovlar soni",
       value: '2,847',
-      change: '-0.2%',
+
       changeType: 'negative',
       iconBg: 'linear-gradient(135deg, #DCFCE7 0%, #BBF7D0 100%)',
       iconColor: '#22C55E',
@@ -1543,8 +1539,8 @@ export default function Billing() {
     {
       icon: '💰',
       label: "To'langan summa",
-      value: '$847,250',
-      change: '+11.5%',
+      value: '847,250',
+
       changeType: 'positive',
       iconBg: 'linear-gradient(135deg, #FCE7F3 0%, #FBCFE8 100%)',
       iconColor: '#EC4899',
@@ -1553,7 +1549,7 @@ export default function Billing() {
       icon: '👥',
       label: "Kirishlar soni",
       value: '8,000',
-      change: '+11.5%',
+
       changeType: 'positive',
       iconBg: 'linear-gradient(135deg, #E0E7FF 0%, #C7D2FE 100%)',
       iconColor: '#4F46E5',
@@ -2200,7 +2196,7 @@ function BankLogosCarousel() {
         style={{
           width: '140px',
           height: '90px',
-          background: isDarkMode ? 'rgba(30, 41, 59, 0.8)' : 'white',
+          background: isDarkMode ? 'rgba(255, 255, 255, 1)' : 'white',
           borderRadius: '16px',
           display: 'flex',
           alignItems: 'center',
