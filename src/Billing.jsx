@@ -2346,7 +2346,7 @@ function BankLogosCarousel() {
           fontWeight: '600',
           letterSpacing: '0.05em',
         }}>
-          HAMKOR BANKLAR
+          HAMKOR TASHKILOTLAR
         </span>
       </div>
     </div>
